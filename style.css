@@ -84,7 +84,7 @@ body {
 
 /* Left aside */
 .left-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
@@ -198,14 +198,18 @@ h1 span:hover {
 /* Media breakpoints */
 /* Extra Small Devices */
 @media (max-width: 576px) {
+  .hero-content {
+    width: 80%;
+  }
 
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 /* Small and Medium Devices */
 @media (min-width: 577px) and (max-width: 992px) {
-}
-
-/* Large Devices */
-@media (min-width: 993px) and (max-width: 1200px) {
-  /* styles for large devices */
+  h1 {
+    font-size: 5rem;
+  }
 }
