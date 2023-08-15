@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-color: var(--bg-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global variables */
+:root {
+  --bg-color: #111;
+  --bg-secondary-color: #23272A;
+  --font-color: #E6E6E6;
+  --font-secondary-color: #B9B9B9;
+  --accent-color: #FF6B6B;
+  --extra-color: #A7FF83;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+
+/* Fonts */
+/* For headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+}
+
+/* For body text */
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--font-color);
+}
+
+/* Left aside */
+.left-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  max-width: 100%;
+  width: 50%;
+  margin-top: 2rem;
+  color: var(--font-color);
+}
+
+.external-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.external-links a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  transition: transform 0.3s;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.external-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--extra-color);
+  transition: width 0.3s;
+}
+
+.external-links a:hover::after {
+  width: 100%;
+}
+
+.external-links a:hover {
+  color: var(--extra-color);
+  transform: scale(1.1);
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 50%;
+  text-align: center;
+}
+
+.hero-content h2 {
+  color: var(--font-secondary-color);
+}
+
+.hero-content h1 span {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.hero-content h1 span:hover {
+  transform: translateY(-10px);
+}
+
+h1 span:hover {
+  color: var(--extra-color);
+}
+
+@keyframes wiggle {
+  0% { transform: translateY(-10px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(-5deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+  75% { transform: translateY(-10px) rotate(-5deg); }
+  100% { transform: translateY(-10px) rotate(0deg); }
+}
+
+h1 span:hover {
+  animation: wiggle 0.5s infinite;
+}
+
+h1 {
+  perspective: 500px;
+}
+
+h1 span:hover {
+  transform: translateY(-10px) rotateX(45deg);
+}
+
+
+/* Media breakpoints */
+/* Extra Small Devices */
+@media (max-width: 576px) {
+
+}
+
+/* Small and Medium Devices */
+@media (min-width: 577px) and (max-width: 992px) {
+}
+
+/* Large Devices */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* styles for large devices */
+}
