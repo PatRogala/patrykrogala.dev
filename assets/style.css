@@ -186,10 +186,6 @@ h1 span:hover {
   animation: wiggle 0.5s infinite;
 }
 
-h1 {
-  perspective: 500px;
-}
-
 h1 span:hover {
   transform: translateY(-10px) rotateX(45deg);
 }
