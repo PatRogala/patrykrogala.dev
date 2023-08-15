@@ -65,7 +65,27 @@ h1 {
   font-weight: 700;
 }
 
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .accent-text {
+  color: var(--accent-color);
+}
+
+.accent-text-extra {
+  color: var(--extra-color);
+}
+
+span:hover {
+  transform: translateY(-10px);
+  color: var(--extra-color);
+}
+
+span.accent-text-extra:hover {
   color: var(--accent-color);
 }
 
@@ -145,12 +165,6 @@ body {
 }
 
 /* Hero section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .hero-content {
   width: 50%;
@@ -166,14 +180,6 @@ body {
   transition: transform 0.3s;
 }
 
-.hero-content h1 span:hover {
-  transform: translateY(-10px);
-}
-
-h1 span:hover {
-  color: var(--extra-color);
-}
-
 @keyframes wiggle {
   0% { transform: translateY(-10px) rotate(0deg); }
   25% { transform: translateY(-10px) rotate(-5deg); }
@@ -186,8 +192,29 @@ h1 span:hover {
   animation: wiggle 0.5s infinite;
 }
 
-h1 span:hover {
+span:hover {
   transform: translateY(-10px) rotateX(45deg);
+}
+
+/* About me section */
+.about-me {
+  flex-direction: column;
+}
+
+.about-me h2 {
+  color: var(--font-secondary-color);
+  letter-spacing: 0.2rem;
+}
+
+.about-me p {
+  margin-top: 0.5rem;
+  width: 80%;
+  font-size: 5rem;
+}
+
+.about-me span {
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
 
@@ -201,11 +228,19 @@ h1 span:hover {
   h1 {
     font-size: 4rem;
   }
+
+  .about-me p {
+    font-size: 2rem;
+  }
 }
 
 /* Small and Medium Devices */
 @media (min-width: 577px) and (max-width: 992px) {
   h1 {
     font-size: 5rem;
+  }
+
+  .about-me p {
+    font-size: 3rem;
   }
 }
