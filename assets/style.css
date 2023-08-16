@@ -171,7 +171,7 @@ body {
   text-align: center;
 }
 
-.hero-content h2 {
+section h2 {
   color: var(--font-secondary-color);
 }
 
@@ -197,11 +197,11 @@ span:hover {
 }
 
 /* About me section */
-.about-me {
+.about-me, .skills-and-tools {
   flex-direction: column;
 }
 
-.about-me h2 {
+section h2 {
   color: var(--font-secondary-color);
   letter-spacing: 0.2rem;
 }
@@ -217,6 +217,75 @@ span:hover {
   transition: all 0.3s;
 }
 
+
+/* Skills */
+.skills-and-tools h2 {
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  width: 80%;
+  --s: 100px;  /* size  */
+  --m: 4px;    /* margin */
+  --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);
+}
+
+.container {
+  font-size: 0;
+}
+
+.container div {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  display: inline-block;
+  font-size:initial;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+  background-size: cover;
+  background-position: center;
+}
+
+.container div:nth-child(1) {
+  background-image: url('/assets/skills/ruby.png');
+}
+
+.container div:nth-child(2) {
+  background-image: url('/assets/skills/rails.png');
+}
+
+.container div:nth-child(3) {
+  background-image: url('/assets/skills/html5.png');
+}
+
+.container div:nth-child(4) {
+  background-image: url('/assets/skills/css3.png');
+}
+
+.container div:nth-child(5) {
+  background-image: url('/assets/skills/javascript.png');
+}
+
+.container div:nth-child(6) {
+  background-image: url('/assets/skills/vscode.png');
+}
+
+.container div:nth-child(7) {
+  background-image: url('/assets/skills/postman.png');
+}
+
+.container div:nth-child(8) {
+  background-image: url('/assets/skills/git.png');
+}
+
+.container::before {
+  content: "";
+  width: calc(var(--s) / 2 + var(--m));
+  float: left;
+  height: 120%;
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+}
 
 /* Media breakpoints */
 /* Extra Small Devices */
@@ -242,5 +311,23 @@ span:hover {
 
   .about-me p {
     font-size: 3rem;
+  }
+}
+
+/* Large and Extra Large Devices */
+@media (min-width: 1000px) {
+  .skills-grid {
+    --s: 200px;  /* size  */
+    --m: 4px;    /* margin */
+    --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);
+  }
+
+  .container div {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+
+  .container div:hover, .container div:focus {
+    filter: grayscale(0%);
   }
 }
