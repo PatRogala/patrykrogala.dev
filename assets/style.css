@@ -48,6 +48,19 @@ table {
 	border-spacing: 0;
 }
 
+.circle {
+	position: absolute;
+  background: var(--accent-color);
+	width: 60px;
+	height: 60px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle:hover {
+  transform: none;
+}
+
 /* Global variables */
 :root {
   --bg-color: #111;
@@ -78,6 +91,11 @@ section {
 
 .accent-text-extra {
   color: var(--extra-color);
+}
+
+span {
+  z-index: 2;
+  position: relative;
 }
 
 span:hover {
@@ -114,6 +132,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .logo-img {
@@ -245,6 +264,8 @@ section h2 {
   margin-bottom: calc(var(--m) - var(--s) * 0.2885);
   background-size: cover;
   background-position: center;
+  z-index: 2;
+  position: relative;
 }
 
 .container div:nth-child(1) {
@@ -301,6 +322,10 @@ section h2 {
   .about-me p {
     font-size: 2rem;
   }
+
+  .circle {
+    display: none;
+  }
 }
 
 /* Small and Medium Devices */
@@ -311,6 +336,10 @@ section h2 {
 
   .about-me p {
     font-size: 3rem;
+  }
+
+  .circle {
+    display: none;
   }
 }
 
