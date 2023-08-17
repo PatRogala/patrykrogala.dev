@@ -191,6 +191,7 @@ body {
 }
 
 section h2 {
+  text-align: center;
   color: var(--font-secondary-color);
 }
 
@@ -308,6 +309,62 @@ section h2 {
   shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
 }
 
+/* Work Gallery */
+.work-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  z-index: 2;
+}
+
+.work-gallery {
+  display: flex;
+}
+
+.work-gallery div {
+  margin-top: 2rem;
+  background-color: red;
+  height: 80vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-gallery h3 {
+  color: var(--extra-color);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 0.3rem 0.5rem;
+}
+
+.work-gallery #koleo-work {
+  background-image: url('/assets/work/koleo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.work-gallery #polregio-work {
+  background-image: url('/assets/work/polregio.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.work-gallery #portfolio-work {
+  background-image: url('/assets/work/recursion.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.work-gallery #kd-work {
+  background-image: url('/assets/work/wagon.png');
+  background-size: cover;
+  background-position: center;
+}
+
 /* Media breakpoints */
 /* Extra Small Devices */
 @media (max-width: 576px) {
@@ -326,6 +383,15 @@ section h2 {
   .circle {
     display: none;
   }
+
+  .work-gallery {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+
+  .work-gallery div {
+    height: 20vh;
+  }
 }
 
 /* Small and Medium Devices */
@@ -340,6 +406,15 @@ section h2 {
 
   .circle {
     display: none;
+  }
+
+  .work-gallery {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+
+  .work-gallery div {
+    height: 40vh;
   }
 }
 
@@ -357,6 +432,16 @@ section h2 {
   }
 
   .container div:hover, .container div:focus {
+    filter: grayscale(0%);
+  }
+
+  .work-gallery div {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+  }
+
+  .work-gallery div:hover {
+    flex-grow: 2;
     filter: grayscale(0%);
   }
 }
