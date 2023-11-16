@@ -23,6 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  ruby,
+  rails,
+  psql,
+  githu,
+  bitbucket,
+  postman,
+  vscode,
 } from "../assets";
 
 export const navLinks = [
@@ -57,6 +64,18 @@ const services = [
 
 const technologies = [
   {
+    name: "Ruby",
+    icon: ruby,
+  },
+  {
+    name: "Rails",
+    icon: rails,
+  },
+  {
+    name: "PSQL",
+    icon: psql,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -69,45 +88,25 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "github",
+    icon: githu,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "bitbucket",
+    icon: bitbucket,
   },
+  {
+    name: "postman",
+    icon: postman,
+  },
+  {
+    name: "vscode",
+    icon: vscode,
+  }
 ];
 
 const experiences = [

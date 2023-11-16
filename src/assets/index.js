@@ -20,6 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import ruby from "./tech/ruby.png";
+import rails from "./tech/rails.png";
+import psql from "./tech/psql.png";
+import githu from "./tech/github.png";
+import bitbucket from "./tech/bitbucket.png";
+import postman from "./tech/postman.png";
+import vscode from "./tech/vscode.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -59,4 +66,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  ruby,
+  rails,
+  psql,
+  githu,
+  bitbucket,
+  postman,
+  vscode
 };
