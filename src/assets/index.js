@@ -20,7 +20,8 @@ import vscode from "./tech/vscode.png";
 
 import koleo from "./company/koleo.png";
 
-import portfolio from "./portfolio.png";
+import portfolio from "./projects/portfolio.png";
+import course_landing_page from "./projects/course-land.png";
 
 export {
   logo,
@@ -42,5 +43,6 @@ export {
   bitbucket,
   postman,
   vscode,
-  portfolio
+  portfolio,
+  course_landing_page
 };

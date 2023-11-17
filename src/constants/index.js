@@ -14,7 +14,8 @@ import {
   bitbucket,
   postman,
   vscode,
-  portfolio
+  portfolio,
+  course_landing_page
 } from "../assets";
 
 export const navLinks = [
@@ -172,6 +173,27 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/PatRogala/patrykrogala.dev",
+  },
+  {
+    name: "Ruby Course Page",
+    description:
+      "Landing page for Ruby course built with React, Threejs vanilla CSS.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: course_landing_page,
+    source_code_link: "https://github.com/PatRogala/ruby-course-landing-page",
   }
 ];
 
