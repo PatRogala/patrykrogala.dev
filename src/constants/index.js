@@ -15,7 +15,8 @@ import {
   postman,
   vscode,
   portfolio,
-  course_landing_page
+  course_landing_page,
+  channel
 } from "../assets";
 
 export const navLinks = [
@@ -153,6 +154,14 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Youtube Channel",
+    description:
+      "My Youtube channel where I share my knowledge about Ruby on Rails and other related technologies.",
+    tags: [],
+    image: channel,
+    source_code_link: "https://www.youtube.com/@patryk_rogala",
+  },
   {
     name: "Personal Portfolio",
     description:

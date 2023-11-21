@@ -22,6 +22,7 @@ import koleo from "./company/koleo.png";
 
 import portfolio from "./projects/portfolio.png";
 import course_landing_page from "./projects/course-land.png";
+import channel from "./projects/channel.png";
 
 export {
   logo,
@@ -44,5 +45,6 @@ export {
   postman,
   vscode,
   portfolio,
-  course_landing_page
+  course_landing_page,
+  channel
 };
