@@ -1,4 +1,5 @@
 import RubyCanvas from './RubyCanvas'
+import { socialLinks } from '../data/socialLinks'
 
 const Landing = () => {
   return (
@@ -27,9 +28,19 @@ const Landing = () => {
         </header>
         <footer className="tracking-wider">
           <ul className="flex items-center justify-center gap-4 pt-4">
-            <li><a href="https://www.instagram.com/patrykrogala.dev/" target="_blank"><img src="./icons/instagram.svg" alt="ig-icon" /></a></li>
-            <li><a href="https://www.linkedin.com/in/patrogala/" target="_blank"><img src="./icons/linkedin.svg" alt="ig-icon" /></a></li>
-            <li><a href="https://www.youtube.com/@patryk_rogala" target="_blank"><img src="./icons/youtube.svg" alt="ig-icon" /></a></li>
+            {socialLinks.map(({ id, name, url, icon: Icon }) => (
+              <li key={id}>
+                <a 
+                  href={url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                  className="block transform transition-all duration-200 hover:-translate-y-1"
+                >
+                  <Icon className="w-6 h-6 text-white hover:text-gray-300 transition-colors" />
+                </a>
+              </li>
+            ))}
           </ul>
         </footer>
       </div>

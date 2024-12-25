@@ -10,7 +10,7 @@ const Ruby = ({ isMobile }) => {
       <mesh>
         <pointLight intensity={200000} position={[0, 2, -10]} />
         <pointLight intensity={200000} position={[0, -2, 10]} />
-        <primitive object={ruby.scene} scale={ isMobile ? 0.5 : 1 } position={ isMobile ? [0.5, -0.5, 0] : [0.9, -1, 0]} rotation={[0, 0.8, 1]} />
+        <primitive object={ruby.scene} scale={ isMobile ? 0.5 : 1.4 } position={ isMobile ? [0.5, -0.5, 0] : [1, -2, 0]} rotation={[0, 0.8, 1]} />
       </mesh>
     </>
   )
