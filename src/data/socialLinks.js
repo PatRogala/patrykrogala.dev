@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaLinkedinIn, FaYoutube, FaGithub } from 'react-icons/fa'
 import { FaMedium } from 'react-icons/fa6'
 
 export const socialLinks = [
@@ -25,5 +25,11 @@ export const socialLinks = [
     name: 'Medium',
     url: 'https://medium.com/@patrykrogedu',
     icon: FaMedium
+  },
+  {
+    id: 5,
+    name: 'GitHub',
+    url: 'https://github.com/PatRogala',
+    icon: FaGithub
   }
 ] 
