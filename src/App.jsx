@@ -1,8 +1,8 @@
-import Landing from "./components/Landing"
+import Hero from "./components/Hero"
 
 function App() {
   return (
-    <Landing />
+    <Hero />
   )
 }
 

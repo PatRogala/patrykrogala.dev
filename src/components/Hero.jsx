@@ -1,7 +1,7 @@
 import RubyCanvas from './RubyCanvas'
 import { socialLinks } from '../data/socialLinks'
 
-const Landing = () => {
+const Hero = () => {
   return (
     <div className="bg-black">
       <div className="flex items-center justify-center absolute inset-0 pointer-events-none text-white bg-black">
@@ -48,4 +48,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default Hero
