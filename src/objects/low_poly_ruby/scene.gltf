@@ -1,45 +1,4 @@
 {
-  "accessors": [
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 176,
-      "max": [
-        1.0,
-        1.0,
-        0.5588399767875671
-      ],
-      "min": [
-        -1.0,
-        -1.0,
-        -0.6622800230979919
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 2112,
-      "componentType": 5126,
-      "count": 176,
-      "max": [
-        0.7471821904182434,
-        0.7471821904182434,
-        1.0
-      ],
-      "min": [
-        -0.7471821904182434,
-        -0.7471821904182434,
-        -0.8300005793571472
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 0,
-      "componentType": 5125,
-      "count": 186,
-      "type": "SCALAR"
-    }
-  ],
   "asset": {
     "extras": {
       "author": "endrit (https://sketchfab.com/endrit)",
@@ -47,158 +6,232 @@
       "source": "https://sketchfab.com/3d-models/low-poly-ruby-786187083f994954a1db1ed9392c12b8",
       "title": "Low Poly Ruby"
     },
-    "generator": "Sketchfab-12.67.0",
+    "generator": "gltfeditor.com",
     "version": "2.0"
   },
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 4968
+    }
+  ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 744,
-      "name": "floatBufferViews",
-      "target": 34963
+      "byteOffset": 0,
+      "byteLength": 4224,
+      "byteStride": 24,
+      "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 4224,
-      "byteOffset": 744,
-      "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
+      "byteOffset": 4224,
+      "byteLength": 744,
+      "target": 34963
     }
   ],
-  "buffers": [
+  "accessors": [
     {
-      "byteLength": 4968,
-      "uri": "scene.bin"
-    }
-  ],
-  "materials": [
-    {
-      "alphaMode": "BLEND",
-      "doubleSided": true,
-      "name": "Material",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.6513748964498259,
-          0.0,
-          0.0,
-          0.9041539634146343
-        ],
-        "roughnessFactor": 0.1053734756097561
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Cylinder_0",
-      "primitives": [
-        {
-          "attributes": {
-            "NORMAL": 1,
-            "POSITION": 0
-          },
-          "indices": 2,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "children": [
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 176,
+      "min": [
+        -0.7471821904182434,
+        -0.7471821904182434,
+        -0.8300005793571472
+      ],
+      "max": [
+        0.7471821904182434,
+        0.7471821904182434,
         1
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        2.220446049250313e-16,
-        -1.0,
-        0.0,
-        0.0,
-        1.0,
-        2.220446049250313e-16,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "Sketchfab_model"
+      "type": "VEC3"
     },
     {
-      "children": [
-        2,
-        4
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 176,
+      "min": [
+        -1,
+        -1,
+        -0.6622800230979919
       ],
-      "name": "Root"
+      "max": [
+        1,
+        1,
+        0.5588399767875671
+      ],
+      "type": "VEC3"
     },
     {
-      "children": [
-        3
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5125,
+      "normalized": false,
+      "count": 186,
+      "min": [
+        0
       ],
-      "matrix": [
-        -0.29086000000000006,
-        0.9551700000000001,
-        -0.05519000000000001,
-        0.0,
-        -0.7711,
-        -0.19988000000000003,
-        0.6045200000000001,
-        0.0,
-        0.5663900000000001,
-        0.21839000000000003,
-        0.7946700000000001,
-        0.0,
-        4.076250000000001,
-        1.00545,
-        5.903860000000001,
-        1.0
+      "max": [
+        175
       ],
-      "name": "Lamp"
-    },
-    {
-      "name": "Lamp"
-    },
-    {
-      "children": [
-        5
-      ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.32516000000000006,
-        0.0,
-        1.4358899999999997,
-        1.0
-      ],
-      "name": "Cylinder"
-    },
-    {
-      "mesh": 0,
-      "name": "Cylinder_0"
+      "type": "SCALAR"
     }
   ],
   "scene": 0,
   "scenes": [
     {
-      "name": "Sketchfab_Scene",
       "nodes": [
+        5
+      ],
+      "name": "scene"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Lamp"
+    },
+    {
+      "name": "Lamp",
+      "children": [
         0
+      ],
+      "matrix": [
+        -0.29086142778396606,
+        0.9551697373390198,
+        -0.05519109591841698,
+        0,
+        -0.7711003422737122,
+        -0.1998799443244934,
+        0.6045199036598206,
+        0,
+        0.5663889050483704,
+        0.2183898538351059,
+        0.7946708798408508,
+        0,
+        4.076250076293945,
+        1.0054500102996826,
+        5.903860092163086,
+        1
       ]
+    },
+    {
+      "name": "Cylinder_0",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.3251599967479706,
+        -4.9148429326351106e-8,
+        -1.4109686613082886,
+        1
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Cylinder",
+      "children": [
+        2
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.3251599967479706,
+        0,
+        1.4358899593353271,
+        1
+      ]
+    },
+    {
+      "name": "Root",
+      "children": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "Sketchfab_model",
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        3.422854177870249e-8,
+        -0.9999999403953552,
+        0,
+        0,
+        0.9999999403953552,
+        3.422854177870249e-8,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "material": 0,
+          "mode": 4,
+          "attributes": {
+            "NORMAL": 0,
+            "POSITION": 1
+          },
+          "indices": 2
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6509803921568628,
+          0,
+          0,
+          0.9041539634146343
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.1053734756097561
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "doubleSided": true
     }
   ]
 }
