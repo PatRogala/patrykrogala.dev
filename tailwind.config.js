@@ -11,6 +11,10 @@ export default {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        white: '#fafafa',
+        black: '#0a0a0a',
+      },
     },
   },
   plugins: [],
