@@ -21,7 +21,7 @@ const Ruby = ({ isMobile }) => {
         <mesh>
             <primitive 
             object={ruby.scene} 
-            scale={isMobile ? 0.7 : 1.8} 
+            scale={isMobile ? 1 : 1.8} 
             position={[0, 0, 0]}
             rotation={[0, 0.1, 0.4]} 
             />
