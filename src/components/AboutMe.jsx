@@ -1,5 +1,3 @@
-// src/components/AboutMe.js
-
 import React from 'react';
 
 const AboutMe = () => {
@@ -34,12 +32,10 @@ const AboutMe = () => {
             mindset to a forward-thinking development team.
           </p>
         </div>
-
-        {/* Optional: Call to Action Button */}
         
         <div className="mt-12">
           <a
-            href="#projects" // Link to your projects section (create later)
+            href="#projects"
             className="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded hover:bg-red-700 transition duration-300 text-lg"
           >
             View My Work
