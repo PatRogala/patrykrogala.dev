@@ -11,6 +11,13 @@ const projectData = [
     liveUrl: 'https://patrykrogala.dev/',
     repoUrl: 'https://github.com/PatRogala/patrykrogala.dev',
   },
+  {
+    id: 2,
+    title: 'Engineering Thesis',
+    imageUrl: 'src/images/szkoleo.png',
+    description: 'A thesis project on the development of a web application. It is a LMS platform for teachers and students.',
+    technologies: ['Ruby 3', 'Ruby on Rails 8', 'Tailwind CSS', 'Stimulus', 'Turbo Frames', 'PostgreSQL', 'Redis'],
+  },
 ];
 
 
