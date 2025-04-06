@@ -1,21 +1,94 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      duration: 0.5,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+const lineVariants = {
+    hidden: { opacity: 0, scaleX: 0 },
+    visible: {
+        opacity: 1,
+        scaleX: 1,
+        transition: {
+            duration: 0.7,
+            ease: "easeOut",
+        },
+    },
+};
+
+const buttonVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+    hover: {
+        scale: 1.05,
+        boxShadow: "0px 5px 15px rgba(220, 38, 38, 0.4)",
+        transition: {
+            duration: 0.2,
+        },
+    },
+    tap: {
+        scale: 0.98,
+    }
+};
 
 const AboutMe = () => {
   return (
-    <section id="about" className="bg-black text-neutral-300 py-16 sm:py-24">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
+    <div id="about" className="bg-black text-neutral-300 py-16 sm:py-24 overflow-hidden">
+      <motion.div
+        className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+        <motion.h2
+          className="text-3xl sm:text-4xl font-extrabold text-white mb-4"
+          variants={itemVariants}
+        >
           ABOUT ME
-        </h2>
+        </motion.h2>
 
         {/* Red Accent Line */}
-        <div className="w-20 h-1 mx-auto bg-red-600 mb-10"></div>
+        <motion.div
+          className="w-20 h-1 mx-auto bg-red-600 mb-10"
+          variants={lineVariants}
+          style={{ originX: 0.5 }}
+        ></motion.div>
 
-        {/* Content Paragraphs */}
-        <div className="space-y-6 text-lg sm:text-xl leading-relaxed">
-          <p>
+        {/* Content Paragraphs Container */}
+        <motion.div
+          className="space-y-6 text-lg sm:text-xl leading-relaxed"
+          variants={itemVariants}
+        >
+           <p>
             I am a results-driven Backend Developer bringing over 3 years of specialized
             experience focused on Ruby on Rails development.
           </p>
@@ -31,20 +104,25 @@ const AboutMe = () => {
             challenges. I'm seeking to contribute my technical expertise and collaborative
             mindset to a forward-thinking development team.
           </p>
-        </div>
-        
-        <div className="mt-12">
-          <a
+        </motion.div>
+
+        {/* Button Container */}
+        <motion.div
+            className="mt-12"
+            variants={buttonVariants}
+        >
+          <motion.a
             href="#projects"
-            className="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded hover:bg-red-700 transition duration-300 text-lg"
+            className="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded hover:bg-red-700 text-lg shadow-md"
+            whileHover="hover"
+            whileTap="tap"
+            variants={buttonVariants}
           >
             View My Work
-          </a>
-        </div>
-       
-
-      </div>
-    </section>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
