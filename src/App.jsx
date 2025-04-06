@@ -1,6 +1,6 @@
 import Hero from "./components/Hero"
 import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
+import ExperienceSection from './components/ExperienceSection';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <AboutMe />
-      <Experience />
+      <ExperienceSection />
       <Education />
       <Projects />
       <Skills />
