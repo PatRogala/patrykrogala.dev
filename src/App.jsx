@@ -2,6 +2,7 @@ import Hero from "./components/Hero"
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Experience />
       <Education />
+      <Projects />
     </div>
   )
 }
